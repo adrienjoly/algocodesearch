@@ -9,9 +9,9 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
 
   const connection = await createProtocolConnection(input, output, console);
 
-  connection.onNotification(function () {
-    console.log('Notification', arguments);
-  });
+  connection.onNotification((kind, { message }) =>
+    console.log(`ℹ️  [${kind}] ${message}`)
+  );
 
   await connection.listen();
 
