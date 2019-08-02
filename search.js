@@ -7,7 +7,8 @@ const {
   DefinitionRequest,
 } = require('vscode-languageserver');
 
-const repodir = "/Users/jeromeschneider/Code/Js/javascript-typescript-langserver";
+//const repodir = "/Users/jeromeschneider/Code/Js/javascript-typescript-langserver";
+const repodir = "/Users/adrienjoly/Dev/_off-sprint/2019-09-02-code-search/javascript-typescript-langserver";
 const repofile = `${repodir}/src/typescript-service.ts`;
 
 const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
@@ -39,24 +40,18 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
       uri: `file://${repofile}`
     }
   });
-  // console.log('=>', JSON.stringify(symbolRes, null, 2));
+  
+  for (const symbol of symbolRes) {
+    console.log(`Generating records for symbol: ${symbol.name}`);
+    const refsRes = await getRefs(connection, symbol.location.range.start);
+    console.log(`=> found ${refsRes.length} refs`);
+    addSymbol(symbol);
+    refsRes.forEach(ref => addSymbolRef(symbol, ref));
+  }
 
-  // symbolRes.map(o => console.log(o.name));
-
-  const firstSymbol = symbolRes[1];
-  // console.log(JSON.stringify(firstSymbol, null, 2));
-
-  const refsRes = await connection.sendRequest(ReferencesRequest.type, {
-    textDocument: {
-      uri: `file://${repofile}`
-    },
-    position: firstSymbol.location.range.start,
-    context: {
-      includeDeclaration: true
-    }
-  });
-  console.log(JSON.stringify(refsRes, null, 2));
-
+  //console.log({ symbols });
+  console.log({ symbolRefs });
+  /*
   const defRes = await connection.sendRequest(DefinitionRequest.type, {
     textDocument: {
       uri: `file://${repofile}`
@@ -64,9 +59,38 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
     position: firstSymbol.location.range.start,
   });
   console.log(JSON.stringify(defRes, null, 2));
+  */
 
   // close the connection and exit
   await connection.dispose();
   process.exit(0);
 
 })();
+
+async function getRefs(connection, position) {
+  return await connection.sendRequest(ReferencesRequest.type, {
+    textDocument: {
+      uri: `file://${repofile}`
+    },
+    position,
+    context: {
+      includeDeclaration: true
+    }
+  });
+}
+
+const symbols = [];
+const symbolRefs = [];
+
+const crypto = require('crypto');
+
+const hash = str => crypto.createHash('md5').update(str).digest("hex")
+
+function addSymbol(symbol) {
+  const symbolID = hash(JSON.stringify(symbol));
+  symbols.push({ objectID: symbolID, ...symbol });
+}
+function addSymbolRef(symbol, ref) {
+  const symbolID = hash(JSON.stringify(symbol));
+  symbolRefs.push({ symbolID, ...ref });
+}
