@@ -24,3 +24,46 @@ $ npm test
 ```
 
 This should send a LSP request to the server and print the response to stdout.
+
+## WIP
+
+* For one file of source code
+    * Get all symbols
+        * For each symbol, output a json record
+        ```
+        {
+            "objectID": (hash of JSON)
+            "name": "WorkspaceSymbolParams",
+            "kind": 13,
+            "location": {
+                "uri": "file:///path/to/javascript-typescript-langserver/src/typescript-service.ts",
+                "range": {
+                    "start": {
+                        "line": 62,
+                        "character": 4
+                    },
+                    "end": {
+                        "line": 62,
+                        "character": 25
+                    }
+                }
+            }
+        }
+        ```
+    * For each symbol, get all references + definition
+        * For each reference, output a json record
+            ```
+            {
+                "uri": "file:///path/to/javascript-typescript-langserver/node_modules/%40types/lodash/common/lang.d.ts",
+                "range": {
+                    "start": {
+                        "line": 11,
+                        "character": 8
+                    },
+                    "end": {
+                        "line": 11,
+                        "character": 17
+                    }
+                }
+            }
+            ```
