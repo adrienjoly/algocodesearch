@@ -1,0 +1,15 @@
+{
+  "name": "algocodesearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vscode-languageserver": "^5.2.1"
+  }
+}
