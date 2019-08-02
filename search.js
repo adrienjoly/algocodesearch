@@ -7,8 +7,11 @@ const {
   DefinitionRequest,
 } = require('vscode-languageserver');
 
-//const repodir = "/Users/jeromeschneider/Code/Js/javascript-typescript-langserver";
-const repodir = "/Users/adrienjoly/Dev/_off-sprint/2019-09-02-code-search/javascript-typescript-langserver";
+const { writeFile } = require('fs');
+const { promisify } = require('util');
+
+const repodir = "/Users/jeromeschneider/Code/Js/javascript-typescript-langserver";
+// const repodir = "/Users/adrienjoly/Dev/_off-sprint/2019-09-02-code-search/javascript-typescript-langserver";
 const repofile = `${repodir}/src/typescript-service.ts`;
 
 const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
@@ -49,17 +52,13 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
     refsRes.forEach(ref => addSymbolRef(symbol, ref));
   }
 
-  //console.log({ symbols });
+  console.log({ symbols });
   console.log({ symbolRefs });
-  /*
-  const defRes = await connection.sendRequest(DefinitionRequest.type, {
-    textDocument: {
-      uri: `file://${repofile}`
-    },
-    position: firstSymbol.location.range.start,
-  });
-  console.log(JSON.stringify(defRes, null, 2));
-  */
+
+  // Generate 2 json files
+  const promiseWriteFile = promisify(writeFile);
+  await promiseWriteFile("index-symbols.json", JSON.stringify(symbols, null, 2));
+  await promiseWriteFile("index-refs.json", JSON.stringify(symbolRefs, null, 2));
 
   // close the connection and exit
   await connection.dispose();
@@ -90,6 +89,7 @@ function addSymbol(symbol) {
   const symbolID = hash(JSON.stringify(symbol));
   symbols.push({ objectID: symbolID, ...symbol });
 }
+
 function addSymbolRef(symbol, ref) {
   const symbolID = hash(JSON.stringify(symbol));
   symbolRefs.push({ symbolID, ...ref });
