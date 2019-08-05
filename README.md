@@ -2,7 +2,9 @@
 
 Off-sprint project that intends to index symbols from a language server (LSP), for code search.
 
-## how to use
+Try the resulting Code Seach UI: https://codesandbox.io/s/ais-ecommerce-demo-app-580me.
+
+## How to use the back-end
 
 - Launch the Language Server in one terminal:
 
