@@ -2,7 +2,7 @@ const assert = require("assert");
 const chalk = require("chalk");
 const globby = require("globby");
 const crypto = require("crypto");
-const path = require('path');
+const path = require("path");
 
 const {
   createServerSocketTransport,
@@ -25,7 +25,7 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
 async function getRefs(connection, fileURI, position) {
   return await connection.sendRequest(ReferencesRequest.type, {
     textDocument: {
-      uri: fileURI  // file:// is included in fileURI
+      uri: fileURI // file:// is included in fileURI
     },
     position,
     context: {
@@ -36,7 +36,7 @@ async function getRefs(connection, fileURI, position) {
 
 class Indexer {
   constructor(repoPath, { ignoredPaths, filePattern }) {
-    assert.ok(path.isAbsolute(repoPath), 'path should be absolute');
+    assert.ok(path.isAbsolute(repoPath), "path should be absolute");
     this.path = repoPath;
     this.ignoredPaths = ignoredPaths;
     this.filePattern = filePattern;
@@ -82,8 +82,6 @@ class Indexer {
       nobrace: true
     });
 
-    console.warn(filePathes);
-
     for (const filePath of filePathes) {
       const symbolRes = await connection.sendRequest(
         DocumentSymbolRequest.type,
@@ -93,8 +91,6 @@ class Indexer {
           }
         }
       );
-
-      console.warn(symbolRes);
 
       for (const symbol of symbolRes) {
         (symbol.location = symbol.location || {}).uri = `file://${filePath}`;
@@ -121,11 +117,17 @@ class Indexer {
           ? symbol.selectionRange
           : symbol.location.range;
 
-        const refsRes = await getRefs(connection, symbol.location.uri, range.start);
-        refsRes.forEach(ref => refs.push({
-          symbolID: makeSymbolID(symbol),
-          ...ref
-        }));
+        const refsRes = await getRefs(
+          connection,
+          symbol.location.uri,
+          range.start
+        );
+        refsRes.forEach(ref =>
+          refs.push({
+            symbolID: makeSymbolID(symbol),
+            ...ref
+          })
+        );
       } catch (e) {
         console.error(
           chalk.red(

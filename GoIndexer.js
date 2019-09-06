@@ -1,10 +1,10 @@
-const Indexer = require('./Indexer');
+const Indexer = require("./Indexer");
 
 class GoIndexer {
   constructor(repoPath) {
     this.indexer = new Indexer(repoPath, {
       filePattern: "**/*.go",
-      ignoredPaths: ["**/vendor"],
+      ignoredPaths: ["**/vendor"]
     });
   }
 
