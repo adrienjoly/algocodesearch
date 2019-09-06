@@ -14,45 +14,37 @@ const chalk = require('chalk');
 
 const globby = require('globby');
 
-const repodir = process.argv[2] || "/Users/jeromeschneider/Code/Js/javascript-typescript-langserver";
-// const repodir = "/Users/adrienjoly/Dev/_off-sprint/2019-09-02-code-search/javascript-typescript-langserver";
-
+const repodir = process.argv[2] || "../javascript-typescript-langserver/src";
 const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
 
 (async () => {
   
   const [input, output] = createServerSocketTransport(LANGUAGE_SERVER_PORT, 'utf-8');
-  //output.write({ jsonrpc: 'hello' });
-
   const connection = await createProtocolConnection(input, output, console);
-
-  // connection.onNotification((kind, { message }) =>
-  //   console.log(`ℹ️  [${kind}] ${message}`)
-  // );
-
   await connection.listen();
 
-  const initRes = await connection.sendRequest(InitializeRequest.type, {
+  await connection.sendRequest(InitializeRequest.type, {
     rootUri: `file://${repodir}`, // current directory
     processId: 1,
     capabilities: {},
     workspaceFolders: null,
     trace: "verbose"
   });
-  // console.log({ initRes });
 
-  const filePathes = await globby(`${repodir}/src/**/*.ts`, {
+  const filePathes = await globby(`${repodir}/**/*.{ts,go}`, {
     absolute: true,
     onlyFiles: true,
     deep: 20,
     case: false,
-    ignore: ['**/node_modules'],    // in the case not .gitignore is set in the notebook!
+    ignore: ['**/node_modules', '**/vendor'],    // in the case not .gitignore is set in the notebook!
     nobrace: true,
   });
 
-  console.log("Filepathes", filePathes);
+  console.log(`${filePathes.length} files to index`);
 
   for (const filePath of filePathes) {
+
+    console.log(`Processing file ${filePath}`)
   
     const symbolRes = await connection.sendRequest(DocumentSymbolRequest.type, {
       textDocument: {
@@ -61,9 +53,11 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
     });
     
     for (const symbol of symbolRes) {
-      console.log(`Generating records for symbol: ${symbol.name} (${symbol.kind}, ${symbol.location.uri}):${symbol.location.range.start.line},${symbol.location.range.start.character}`);
+      console.log(symbol);
       try {
-        const refsRes = await getRefs(connection, filePath, symbol.location.range.start);
+        const range = symbol.selectionRange ? symbol.selectionRange : symbol.location.range;
+        console.log(`Generating records for symbol: ${symbol.name} (${symbol.kind}, ${filePath}):${range.start.line},${range.start.character}`);
+        const refsRes = await getRefs(connection, filePath, range.start);
         console.log(`=> found ${refsRes.length} refs`);
         addSymbol(symbol);
         refsRes.forEach(ref => addSymbolRef(symbol, ref)); 
