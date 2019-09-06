@@ -67,7 +67,7 @@ class JavaScriptIndexer {
   async indexSymbols() {
     const symbols = [];
 
-    const {connection, disconnect} = await this.connect();
+    const { connection, disconnect } = await this.connect();
 
     const filePathes = await globby(`${this.path}/**/*.{js,ts,go}`, {
       absolute: true,
@@ -89,7 +89,10 @@ class JavaScriptIndexer {
       );
 
       for (const symbol of symbolRes) {
-        symbols.push(symbol);
+        symbols.push({
+          symbolID: hash(JSON.stringify(symbol)),
+          ...symbol
+        });
       }
     }
 
@@ -101,7 +104,7 @@ class JavaScriptIndexer {
 
   async indexRefs(symbols) {
     const refs = [];
-    const {connection, disconnect} = await this.connect();
+    const { connection, disconnect } = await this.connect();
 
     for (const symbol of symbols) {
       try {

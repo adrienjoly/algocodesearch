@@ -19,6 +19,13 @@ describe('indexing a javascript file', () => {
     expect(symbols).toHaveLength(1);
   })
 
+  it('should give IDs to symbols', async () => {
+    const indexer = new JavaScriptIndexer(`${__dirname}/test-repo`);
+    const symbols = await indexer.indexSymbols();
+
+    expect(symbols[0]).toHaveProperty('symbolID');
+  })
+
   it('returns 2 refs to that symbol', async () => {
     const indexer = new JavaScriptIndexer(`${__dirname}/test-repo`);
     const symbols = await indexer.indexSymbols();
@@ -26,4 +33,13 @@ describe('indexing a javascript file', () => {
 
     expect(refs).toHaveLength(2);
   })
+
+  it('should reference symbolIDs in refs', async () => {
+    const indexer = new JavaScriptIndexer(`${__dirname}/test-repo`);
+    const symbols = await indexer.indexSymbols();
+    const refs = await indexer.indexRefs(symbols);
+
+    expect(refs[0]).toHaveProperty('symbolID');
+  })
+
 })
