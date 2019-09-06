@@ -18,6 +18,8 @@ const hash = str =>
     .update(str)
     .digest("hex");
 
+const makeSymbolID = symbol => hash(JSON.stringify(symbol));
+
 const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
 
 async function getRefs(connection, fileURI, position) {
@@ -90,7 +92,7 @@ class JavaScriptIndexer {
 
       for (const symbol of symbolRes) {
         symbols.push({
-          symbolID: hash(JSON.stringify(symbol)),
+          symbolID: makeSymbolID(symbol),
           ...symbol
         });
       }
@@ -113,8 +115,10 @@ class JavaScriptIndexer {
           : symbol.location.range;
 
         const refsRes = await getRefs(connection, symbol.location.uri, range.start);
-        const symbolID = hash(JSON.stringify(symbol));
-        refsRes.forEach(ref => refs.push({ symbolID, ...ref }));
+        refsRes.forEach(ref => refs.push({
+          symbolID: makeSymbolID(symbol),
+          ...ref
+        }));
       } catch (e) {
         console.error(
           chalk.red(
