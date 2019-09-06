@@ -124,7 +124,7 @@ class Indexer {
         );
         refsRes.forEach(ref =>
           refs.push({
-            symbolID: makeSymbolID(symbol),
+            symbolID: symbol.symbolID,
             ...ref
           })
         );

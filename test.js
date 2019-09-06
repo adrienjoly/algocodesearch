@@ -78,4 +78,15 @@ describe("indexing a javascript file", () => {
 
     expect(refs[0]).toHaveProperty("symbolID");
   });
+
+  it("should have matching symbolIDs", async () => {
+    const indexer = new JavaScriptIndexer(ABS_REPO_PATH);
+    const symbols = await indexer.indexSymbols();
+    const refs = await indexer.indexRefs(symbols);
+    const { symbolID } = symbols[0];
+    
+    expect(symbols[0].symbolID).toBeTruthy();
+    expect(refs[0].symbolID).toBeTruthy();
+    expect(refs.find(ref => ref.symbolID === symbolID)).toBeTruthy();
+  });
 });
