@@ -2,9 +2,7 @@ const chalk = require("chalk");
 
 const globby = require("globby");
 
-const crypto = require('crypto');
-
-const hash = str => crypto.createHash('md5').update(str).digest("hex")
+const crypto = require("crypto");
 
 const {
   createServerSocketTransport,
@@ -14,12 +12,18 @@ const {
   DocumentSymbolRequest
 } = require("vscode-languageserver");
 
+const hash = str =>
+  crypto
+    .createHash("md5")
+    .update(str)
+    .digest("hex");
+
 const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
 
-async function getRefs(connection, filePath, position) {
+async function getRefs(connection, fileURI, position) {
   return await connection.sendRequest(ReferencesRequest.type, {
     textDocument: {
-      uri: `file://${filePath}`
+      uri: fileURI  // file:// is included in fileURI
     },
     position,
     context: {
@@ -67,7 +71,6 @@ class JavaScriptIndexer {
     });
 
     for (const filePath of filePathes) {
-      console.warn(filePath);
       const symbolRes = await connection.sendRequest(
         DocumentSymbolRequest.type,
         {
@@ -89,25 +92,16 @@ class JavaScriptIndexer {
   }
 
   async indexRefs(symbols) {
-
     const refs = [];
     const connection = await this.connect();
 
     for (const symbol of symbols) {
-      console.log(symbol);
       try {
         const range = symbol.selectionRange
           ? symbol.selectionRange
           : symbol.location.range;
-        console.warn(symbol.location.uri);
-        const filePath = symbol.location.uri.replace(/^file:\/\//, '');
-        console.warn("PATH:" + filePath);
-        console.log(
-          `Generating records for symbol: ${symbol.name} (${symbol.kind}, ${filePath}):${range.start.line},${range.start.character}`
-        );
-        const refsRes = await getRefs(connection, filePath, range.start);
-        console.log(`=> found ${refsRes.length} refs`);
-        // refsRes.forEach(ref => addSymbolRef(symbol, ref));
+        
+        const refsRes = await getRefs(connection, symbol.location.uri, range.start);
         const symbolID = hash(JSON.stringify(symbol));
         refsRes.forEach(ref => refs.push({ symbolID, ...ref }));
       } catch (e) {
@@ -119,8 +113,9 @@ class JavaScriptIndexer {
         );
         throw e;
       }
-      console.log();
     }
+
+    await connection.dispose();
 
     return refs;
   }
