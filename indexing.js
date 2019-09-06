@@ -6,6 +6,8 @@ const { promisify } = require('util');
 
 const repodir = path.resolve(process.argv[2] || "../javascript-typescript-langserver/src");
 
+console.warn(`Indexing ${repodir}...`);
+
 (async () => {
   const indexer = new JavaScriptIndexer(repodir);
   const symbols = await indexer.indexSymbols();
