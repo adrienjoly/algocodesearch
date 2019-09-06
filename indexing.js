@@ -5,7 +5,6 @@ const { promisify } = require('util');
 const repodir = process.argv[2] || "../javascript-typescript-langserver/src";
 
 (async () => {
-  
     // Generate 2 json files
     const promiseWriteFile = promisify(writeFile);
     await promiseWriteFile("index-symbols-v2.json", JSON.stringify(symbols, null, 2));
