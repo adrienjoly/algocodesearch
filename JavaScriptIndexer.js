@@ -54,13 +54,20 @@ class JavaScriptIndexer {
       trace: "verbose"
     });
 
-    return connection;
+    return {
+      connection,
+      async disconnect() {
+        await connection.dispose();
+        await input.dispose();
+        await output.dispose();
+      }
+    };
   }
 
   async indexSymbols() {
     const symbols = [];
 
-    const connection = await this.connect();
+    const {connection, disconnect} = await this.connect();
 
     const filePathes = await globby(`${this.path}/**/*.{js,ts,go}`, {
       absolute: true,
@@ -87,21 +94,21 @@ class JavaScriptIndexer {
     }
 
     // close the connection and exit
-    await connection.dispose();
+    await disconnect();
 
     return symbols;
   }
 
   async indexRefs(symbols) {
     const refs = [];
-    const connection = await this.connect();
+    const {connection, disconnect} = await this.connect();
 
     for (const symbol of symbols) {
       try {
         const range = symbol.selectionRange
           ? symbol.selectionRange
           : symbol.location.range;
-        
+
         const refsRes = await getRefs(connection, symbol.location.uri, range.start);
         const symbolID = hash(JSON.stringify(symbol));
         refsRes.forEach(ref => refs.push({ symbolID, ...ref }));
@@ -116,7 +123,7 @@ class JavaScriptIndexer {
       }
     }
 
-    await connection.dispose();
+    await disconnect();
 
     return refs;
   }
