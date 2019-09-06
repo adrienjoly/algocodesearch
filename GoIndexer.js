@@ -34,7 +34,7 @@ async function getRefs(connection, fileURI, position) {
   });
 }
 
-class JavaScriptIndexer {
+class GoIndexer {
   constructor(repoPath) {
     assert.ok(path.isAbsolute(repoPath), 'path should be absolute');
     this.path = repoPath;
@@ -71,12 +71,12 @@ class JavaScriptIndexer {
 
     const { connection, disconnect } = await this.connect();
 
-    const filePathes = await globby(`${this.path}/**/*.js`, {
+    const filePathes = await globby(`${this.path}/**/*.go`, {
       absolute: true,
       onlyFiles: true,
       deep: 20,
       case: false,
-      ignore: ["**/node_modules"],
+      ignore: ["**/vendor"],
       nobrace: true
     });
 
@@ -136,4 +136,4 @@ class JavaScriptIndexer {
   }
 }
 
-module.exports = JavaScriptIndexer;
+module.exports = GoIndexer;

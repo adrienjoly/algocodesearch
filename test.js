@@ -2,9 +2,19 @@
 
 const path = require('path');
 const JavaScriptIndexer = require('./JavaScriptIndexer');
+const GoIndexer = require('./GoIndexer');
 
 const REL_REPO_PATH = "./test-repo";
 const ABS_REPO_PATH = path.resolve(REL_REPO_PATH);
+
+describe('indexing a go file', () => {
+  it('returns 1 symbol', async () => {
+    const indexer = new GoIndexer(ABS_REPO_PATH);
+    const symbols = await indexer.indexSymbols();
+
+    expect(symbols).toHaveLength(1);
+  });
+});
 
 describe('indexing a javascript file', () => {
 
