@@ -27,6 +27,19 @@ $ npm run test:server
 
 This should send a LSP request to the server and print the response to stdout.
 
+- Index a directory that contains JS source code
+
+```sh
+# git clone https://github.com/adrienjoly/algocodesearch.git
+# cd algocodesearch
+# npm install
+$ node indexing.js ../my-js-project/
+# => will generate index-symbols.json and index-refs.json
+```
+
+- Then you can import these 2 files into Algolia indices
+
+
 ## WIP
 
 * For one file of source code
