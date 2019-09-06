@@ -7,19 +7,27 @@ const {
 
 const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
 
-(async () => {
+const run = () => new Promise((resolve, reject) => {
 
   const [input, output] = createServerSocketTransport(LANGUAGE_SERVER_PORT, 'utf-8');
-  //output.write({ jsonrpc: 'hello' });
+  
+  const connection = createProtocolConnection(input, output, console);
+  connection.onError(err => {
+    reject(err);
+  });
+  makeRequest(connection).then(resolve);
+});
 
-  const connection = await createProtocolConnection(input, output, console);
-
+async function makeRequest(connection) {
+  /*
   connection.onNotification((kind, { message }) =>
-    console.log(`ℹ️  [${kind}] ${message}`)
+  console.log(`ℹ️  [${kind}] ${message}`)
   );
+  */
 
   await connection.listen();
 
+  console.log(`Waiting for response from localhost:${LANGUAGE_SERVER_PORT}...`);
   const initRes = await connection.sendRequest(InitializeRequest.type, {
     rootUri: `file://${__dirname}`, // current directory
     processId: 1,
@@ -31,7 +39,7 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
 
   const refsRes = await connection.sendRequest(ReferencesRequest.type, {
     textDocument: {
-      uri: `file://${__dirname}/test.js`
+      uri: `file://${__dirname}/experiment.js`
     },
     position: {
       line: 1, // starts at zero
@@ -43,8 +51,13 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
   });
   console.log('=>', JSON.stringify(refsRes, null, 2));
 
-  // close the connection and exit
   await connection.dispose();
-  process.exit(0);
+}
 
-})();
+run().then(() => {
+  console.log('✅  We got a response from the language server');
+  process.exit(0);
+}).catch(err => {
+  console.error('Error:', err);
+  process.exit(1);
+});

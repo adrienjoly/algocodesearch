@@ -22,7 +22,7 @@ $ node lib/language-server --trace
 $ git clone https://github.com/adrienjoly/algocodesearch.git
 $ cd algocodesearch
 $ npm install
-$ npm test
+$ npm run test:server
 ```
 
 This should send a LSP request to the server and print the response to stdout.
