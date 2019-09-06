@@ -10,6 +10,8 @@ const {
 const { writeFile } = require('fs');
 const { promisify } = require('util');
 
+const globby = require('globby');
+
 const repodir = "/Users/jeromeschneider/Code/Js/javascript-typescript-langserver";
 // const repodir = "/Users/adrienjoly/Dev/_off-sprint/2019-09-02-code-search/javascript-typescript-langserver";
 const repofile = `${repodir}/src/typescript-service.ts`;
@@ -36,20 +38,36 @@ const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
     workspaceFolders: null,
     trace: "verbose"
   });
-  console.log({ initRes });
+  // console.log({ initRes });
 
-  const symbolRes = await connection.sendRequest(DocumentSymbolRequest.type, {
-    textDocument: {
-      uri: `file://${repofile}`
-    }
+  const filePathes = await globby(`${repodir}/src/**/*.ts`, {
+    absolute: true,
+    onlyFiles: true,
+    deep: 20,
+    case: false,
+    ignore: ['**/node_modules'],    // in the case not .gitignore is set in the notebook!
+    nobrace: true,
   });
+
+  for (const filePath of filePathes) {
   
-  for (const symbol of symbolRes) {
-    console.log(`Generating records for symbol: ${symbol.name}`);
-    const refsRes = await getRefs(connection, symbol.location.range.start);
-    console.log(`=> found ${refsRes.length} refs`);
-    addSymbol(symbol);
-    refsRes.forEach(ref => addSymbolRef(symbol, ref));
+    const symbolRes = await connection.sendRequest(DocumentSymbolRequest.type, {
+      textDocument: {
+        uri: `file://${filePath}`
+      }
+    });
+    
+    for (const symbol of symbolRes) {
+      console.log(`Generating records for symbol: ${symbol.name} (${symbol.kind}, ${symbol.location.uri}):${symbol.location.range.start.line},${symbol.location.range.start.character}`);
+      try {
+        const refsRes = await getRefs(connection, symbol.location.range.start);
+        console.log(`=> found ${refsRes.length} refs`);
+        addSymbol(symbol);
+        refsRes.forEach(ref => addSymbolRef(symbol, ref)); 
+      } catch(e) {
+        // console.error(e);
+      }
+    }
   }
 
   console.log({ symbols });
