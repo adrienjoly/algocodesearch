@@ -1,8 +1,8 @@
+const assert = require("assert");
 const chalk = require("chalk");
-
 const globby = require("globby");
-
 const crypto = require("crypto");
+const path = require('path');
 
 const {
   createServerSocketTransport,
@@ -33,8 +33,9 @@ async function getRefs(connection, fileURI, position) {
 }
 
 class JavaScriptIndexer {
-  constructor(path) {
-    this.path = path;
+  constructor(repoPath) {
+    assert.ok(path.isAbsolute(repoPath), 'path should be absolute');
+    this.path = repoPath;
   }
 
   async connect() {
