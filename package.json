@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:server": "node test-server.js",
+    "test:watch": "jest --watch",
     "test": "jest"
   },
   "keywords": [],
