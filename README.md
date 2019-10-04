@@ -4,6 +4,15 @@ Off-sprint project that intends to index symbols from a language server (LSP), f
 
 Try the resulting Code Seach UI: https://codesandbox.io/s/ais-ecommerce-demo-app-580me.
 
+## Vision
+
+Do better than GitHub to discover and explore a codebase.
+
+Use cases:
+- find that user-identification API call by just typing "user", and then exploring
+- share a tutorial on how a particular sequence of actions is being run in the code
+- find insights about how symbols are spread in your codebase, to help you refactor
+
 ## How to use the back-end
 
 - Launch the Language Server in one terminal:
