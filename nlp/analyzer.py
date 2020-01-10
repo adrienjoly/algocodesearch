@@ -29,10 +29,10 @@ def analyze(symbols):
         tokens = word_tokenize(line)
         data.append([t for t in tokens if t not in blacklist])
 
-    # CBOW model
+    # CBOW model: Teach a neural network to predict a context given its token
     model_bag = gensim.models.Word2Vec(data, min_count=1,
                                        size=100, window=WINDOW_SIZE)
-    # Skip Gram model
+    # Skip Gram model: Teach a neural network to predict a token given its context
     model_skip = gensim.models.Word2Vec(data, min_count=1, size=100,
                                         window=WINDOW_SIZE, sg=1)
     # TODO: Choose which model works best for each task.
