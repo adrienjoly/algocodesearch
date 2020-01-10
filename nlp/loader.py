@@ -17,10 +17,7 @@ def load_symbols():
         symbol = Symbol(s, symbol_references)
         symbols.append(symbol)
 
-    for s in sorted(symbols, key=lambda s1: len(s1.references), reverse=True):
-        print(s)
-
-    return symbols
+    return [s for s in sorted(symbols, key=lambda s1: len(s1.references), reverse=True)]
 
 
 if __name__ == '__main__':
