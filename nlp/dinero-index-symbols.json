@@ -1,0 +1,4386 @@
+[
+  {
+    "symbolID": "efa7aaf29aa74d7b95cd89b32d9ef5f5",
+    "name": "\"dinero-polyfilled\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero-polyfilled.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 12,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "612b4ae3db1db2137112d0972c1429ca",
+    "name": "Dinero",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero-polyfilled.js",
+      "range": {
+        "start": {
+          "line": 10,
+          "character": 7
+        },
+        "end": {
+          "line": 10,
+          "character": 13
+        }
+      }
+    },
+    "containerName": "\"dinero-polyfilled\""
+  },
+  {
+    "symbolID": "43eed0e755fbf9d18dc2b23e460859ea",
+    "name": "\"dinero\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 946,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "82724aa5072e174f79d0c0ff4a479290",
+    "name": "assert",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 2
+        },
+        "end": {
+          "line": 6,
+          "character": 8
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "04c18db1bd645c05854e291f7cbf0f40",
+    "name": "assertInteger",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 9,
+          "character": 2
+        },
+        "end": {
+          "line": 9,
+          "character": 15
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "0eb26d62a1d26445d33fb5834a7e2e72",
+    "name": "assertPercentage",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 7,
+          "character": 2
+        },
+        "end": {
+          "line": 7,
+          "character": 18
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "d384f81c840e84552059f71f535bcb69",
+    "name": "assertValidRatios",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 8,
+          "character": 2
+        },
+        "end": {
+          "line": 8,
+          "character": 19
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "371d44385fb9dd6b2553831932a48202",
+    "name": "calculator",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 13,
+          "character": 6
+        },
+        "end": {
+          "line": 13,
+          "character": 31
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "92810ff3edc835911c67af4404ee1902",
+    "name": "Calculator",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 3,
+          "character": 7
+        },
+        "end": {
+          "line": 3,
+          "character": 17
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "fa0fda34e108056c67aa65e6a83d587d",
+    "name": "CurrencyConverter",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 7
+        },
+        "end": {
+          "line": 4,
+          "character": 24
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "0a70dbf521140bd8f5342b7b03665352",
+    "name": "Defaults",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 9
+        },
+        "end": {
+          "line": 0,
+          "character": 17
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "f2e003425c9a9f3c1c4ec636a20c0cb2",
+    "name": "Dinero",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 45,
+          "character": 6
+        },
+        "end": {
+          "line": 943,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "703c93f5b188b3db147cf16c75e2a128",
+    "name": "add",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 220,
+          "character": 4
+        },
+        "end": {
+          "line": 227,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "5da22b454657a2166c91976e720f5b08",
+    "name": "addends",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 222,
+          "character": 12
+        },
+        "end": {
+          "line": 222,
+          "character": 63
+        }
+      }
+    },
+    "containerName": "add"
+  },
+  {
+    "symbolID": "5fc498d8a0db09e872daca0a6a4ada5b",
+    "name": "allocate",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 368,
+          "character": 4
+        },
+        "end": {
+          "line": 388,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "2d8dff83739fffef02a8cb14b60e952e",
+    "name": "i",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 382,
+          "character": 15
+        },
+        "end": {
+          "line": 382,
+          "character": 20
+        }
+      }
+    },
+    "containerName": "allocate"
+  },
+  {
+    "symbolID": "01365f087ef241472060a1f15e6af0aa",
+    "name": "remainder",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 372,
+          "character": 10
+        },
+        "end": {
+          "line": 372,
+          "character": 38
+        }
+      }
+    },
+    "containerName": "allocate"
+  },
+  {
+    "symbolID": "cb40452d5aaef7a5dfc6eebd378ffbdf",
+    "name": "shares",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 374,
+          "character": 12
+        },
+        "end": {
+          "line": 380,
+          "character": 8
+        }
+      }
+    },
+    "containerName": "allocate"
+  },
+  {
+    "symbolID": "f3842da336da82fbaaa4051931870f9e",
+    "name": "share",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 375,
+          "character": 14
+        },
+        "end": {
+          "line": 377,
+          "character": 9
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "9f6da5d2909e549cb92a14a4d5197089",
+    "name": "total",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 371,
+          "character": 12
+        },
+        "end": {
+          "line": 371,
+          "character": 65
+        }
+      }
+    },
+    "containerName": "allocate"
+  },
+  {
+    "symbolID": "933c89b2636f89b6e0c77cbc7e75b6da",
+    "name": "amount",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 46,
+          "character": 10
+        },
+        "end": {
+          "line": 46,
+          "character": 16
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "78c9fb29f9ba651184de0ca602446f8d",
+    "name": "assertSameCurrency",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 97,
+          "character": 8
+        },
+        "end": {
+          "line": 104,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "c5389985436969cf05b90e12c03b3fa4",
+    "name": "convert",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 494,
+          "character": 4
+        },
+        "end": {
+          "line": 529,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "443960231906714f64b2ad7d8471dec9",
+    "name": "options",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 503,
+          "character": 12
+        },
+        "end": {
+          "line": 511,
+          "character": 7
+        }
+      }
+    },
+    "containerName": "convert"
+  },
+  {
+    "symbolID": "e8fba6a485f67f067239c86c83388294",
+    "name": "convertPrecision",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 189,
+          "character": 4
+        },
+        "end": {
+          "line": 201,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "b47b0a3b10cb889c3e30798dba4c23c8",
+    "name": "create",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 75,
+          "character": 8
+        },
+        "end": {
+          "line": 91,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "75eea7798a9cb9b8ea7bea899ceceaee",
+    "name": "obj",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 76,
+          "character": 10
+        },
+        "end": {
+          "line": 80,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "create"
+  },
+  {
+    "symbolID": "9a5d7a242157daae7757436925aacd4a",
+    "name": "currency",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 46,
+          "character": 18
+        },
+        "end": {
+          "line": 46,
+          "character": 26
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "5db667f5f48912442d68fd00660ecd66",
+    "name": "divide",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 313,
+          "character": 4
+        },
+        "end": {
+          "line": 320,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "5ad10641b9fd1983450255fc4cf165f8",
+    "name": "equalsTo",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 556,
+          "character": 4
+        },
+        "end": {
+          "line": 558,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "466f608ebcbeb9cc04f402cf52615653",
+    "name": "getAmount",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 116,
+          "character": 4
+        },
+        "end": {
+          "line": 118,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "e9676c422c48f2c60643608d3169948d",
+    "name": "getCurrency",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 128,
+          "character": 4
+        },
+        "end": {
+          "line": 130,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "f64a21e94ae17955627ae5faa7cdedfa",
+    "name": "getLocale",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 140,
+          "character": 4
+        },
+        "end": {
+          "line": 142,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "4eafef1cc02c6bcb1dbcc9015e0dd6d7",
+    "name": "getPrecision",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 166,
+          "character": 4
+        },
+        "end": {
+          "line": 168,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "fb8392a64cd809be87b199a9cb8e0e18",
+    "name": "globalExchangeRatesApi",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 66,
+          "character": 8
+        },
+        "end": {
+          "line": 69,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "3f3609c5505eee251fe9e4009ccdd2ff",
+    "name": "globalFormat",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 61,
+          "character": 4
+        },
+        "end": {
+          "line": 61,
+          "character": 16
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "203ab56c2aa0614589d983eea99894b8",
+    "name": "globalFormatRoundingMode",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 63,
+          "character": 4
+        },
+        "end": {
+          "line": 63,
+          "character": 28
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "e5b323a08cdf014d31560a88742e23ae",
+    "name": "globalLocale",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 60,
+          "character": 4
+        },
+        "end": {
+          "line": 60,
+          "character": 16
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "2ae3ee5f65cce1c2f018fd6ec4cf8de9",
+    "name": "globalRoundingMode",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 62,
+          "character": 4
+        },
+        "end": {
+          "line": 62,
+          "character": 22
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "202242bc7a5f67cb227cd96aeb15d970",
+    "name": "greaterThan",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 641,
+          "character": 4
+        },
+        "end": {
+          "line": 645,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "5346fd0d85eab39da1f833e0de55071e",
+    "name": "comparators",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 643,
+          "character": 12
+        },
+        "end": {
+          "line": 643,
+          "character": 71
+        }
+      }
+    },
+    "containerName": "greaterThan"
+  },
+  {
+    "symbolID": "b29fc1e42d77f0d56d5dca68aae82526",
+    "name": "greaterThanOrEqual",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 674,
+          "character": 4
+        },
+        "end": {
+          "line": 678,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "cbbbe70b87d9332cb2eff116383eca8d",
+    "name": "comparators",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 676,
+          "character": 12
+        },
+        "end": {
+          "line": 676,
+          "character": 71
+        }
+      }
+    },
+    "containerName": "greaterThanOrEqual"
+  },
+  {
+    "symbolID": "034dac5dd44ff3354b12ac2f3209ccf6",
+    "name": "hasCents",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 761,
+          "character": 4
+        },
+        "end": {
+          "line": 763,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "b58b77bf05bd3dd3963a6fbeda20fc9f",
+    "name": "hasSameAmount",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 801,
+          "character": 4
+        },
+        "end": {
+          "line": 804,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "fa3605cbfb15d245b974d4582577c15f",
+    "name": "comparators",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 802,
+          "character": 12
+        },
+        "end": {
+          "line": 802,
+          "character": 71
+        }
+      }
+    },
+    "containerName": "hasSameAmount"
+  },
+  {
+    "symbolID": "24a57bfb52e9bfcbfc88ee41ee2349b5",
+    "name": "hasSameCurrency",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 778,
+          "character": 4
+        },
+        "end": {
+          "line": 780,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "47bcfd4589d9470a8f86f248e8d338ea",
+    "name": "hasSubUnits",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 743,
+          "character": 4
+        },
+        "end": {
+          "line": 745,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "7b2ae3244327595effe01a1de8cf98d8",
+    "name": "isNegative",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 727,
+          "character": 4
+        },
+        "end": {
+          "line": 729,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "0c86ecc3012dac2309f55f9cbdb996a3",
+    "name": "isPositive",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 709,
+          "character": 4
+        },
+        "end": {
+          "line": 711,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "d0e701d4f770686e3d03136e51478ae9",
+    "name": "isZero",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 691,
+          "character": 4
+        },
+        "end": {
+          "line": 693,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "14d54eb60b83f375bbca1f46208eab1b",
+    "name": "lessThan",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 581,
+          "character": 4
+        },
+        "end": {
+          "line": 585,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "2e7022040e92024790997e7b7b3da5a0",
+    "name": "comparators",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 583,
+          "character": 12
+        },
+        "end": {
+          "line": 583,
+          "character": 71
+        }
+      }
+    },
+    "containerName": "lessThan"
+  },
+  {
+    "symbolID": "35d4f173b12e892cd01cc91cc7c9dccc",
+    "name": "lessThanOrEqual",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 614,
+          "character": 4
+        },
+        "end": {
+          "line": 618,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "245a0a35957e16dfe6669d4905c377b3",
+    "name": "comparators",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 616,
+          "character": 12
+        },
+        "end": {
+          "line": 616,
+          "character": 71
+        }
+      }
+    },
+    "containerName": "lessThanOrEqual"
+  },
+  {
+    "symbolID": "bc7a0e6319710c3f3e0a7c672a39399f",
+    "name": "multiply",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 280,
+          "character": 4
+        },
+        "end": {
+          "line": 287,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "cde88f7941325a4742c6dff9e384adef",
+    "name": "percentage",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 336,
+          "character": 4
+        },
+        "end": {
+          "line": 339,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "67fdcf46fcc1a7b171a1b3903ad53c37",
+    "name": "precision",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 46,
+          "character": 28
+        },
+        "end": {
+          "line": 46,
+          "character": 37
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "2774cdb16bdaeb33b2e97dbedf7c45a1",
+    "name": "setLocale",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 154,
+          "character": 4
+        },
+        "end": {
+          "line": 156,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "8c4f76f7133beae09cff5dddaa4b247d",
+    "name": "subtract",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 246,
+          "character": 4
+        },
+        "end": {
+          "line": 256,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "5e274ab8b7330a54081fdb5994a5e68d",
+    "name": "subtrahends",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 248,
+          "character": 12
+        },
+        "end": {
+          "line": 248,
+          "character": 71
+        }
+      }
+    },
+    "containerName": "subtract"
+  },
+  {
+    "symbolID": "b989b3c59ba0f3d7a1974367a8c4b153",
+    "name": "toFormat",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 854,
+          "character": 4
+        },
+        "end": {
+          "line": 867,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "38fe4c6340aa5330b9a2bb182196d890",
+    "name": "formatter",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 855,
+          "character": 12
+        },
+        "end": {
+          "line": 855,
+          "character": 38
+        }
+      }
+    },
+    "containerName": "toFormat"
+  },
+  {
+    "symbolID": "a5413174abb1f4fbcb8b73257b54a244",
+    "name": "toJSON",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 939,
+          "character": 4
+        },
+        "end": {
+          "line": 941,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "7496e8a38e40943e7b4aef8db4c93b21",
+    "name": "toObject",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 920,
+          "character": 4
+        },
+        "end": {
+          "line": 926,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "0776ce2ea43cd3953cede53eead7df4a",
+    "name": "toRoundedUnit",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 901,
+          "character": 4
+        },
+        "end": {
+          "line": 910,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "4db47d0fbdc03fba17c0b2b094ab7e10",
+    "name": "factor",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 902,
+          "character": 12
+        },
+        "end": {
+          "line": 902,
+          "character": 41
+        }
+      }
+    },
+    "containerName": "toRoundedUnit"
+  },
+  {
+    "symbolID": "8475a6c3b8b9a228b32dd6ab30daeab1",
+    "name": "toUnit",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 880,
+          "character": 4
+        },
+        "end": {
+          "line": 882,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Dinero"
+  },
+  {
+    "symbolID": "0af6391cf5071c116b2f0b046dbbe6e9",
+    "name": "Format",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 2,
+          "character": 7
+        },
+        "end": {
+          "line": 2,
+          "character": 13
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "4728fe321de483aa6bc80f6326343bbb",
+    "name": "Globals",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 19
+        },
+        "end": {
+          "line": 0,
+          "character": 26
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "64e45f44a0becd7b1e4123fe28a1c903",
+    "name": "isUndefined",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 11,
+          "character": 9
+        },
+        "end": {
+          "line": 11,
+          "character": 20
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "710d5473c762ebe8912d15a690c3b176",
+    "name": "Static",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/dinero.js",
+      "range": {
+        "start": {
+          "line": 1,
+          "character": 7
+        },
+        "end": {
+          "line": 1,
+          "character": 13
+        }
+      }
+    },
+    "containerName": "\"dinero\""
+  },
+  {
+    "symbolID": "a141ac707b743c1dafbbd87a0bd13ff7",
+    "name": "babel",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 1,
+          "character": 6
+        },
+        "end": {
+          "line": 1,
+          "character": 44
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "09b0fc2ad5276ca05051d69f7c9dac39",
+    "name": "buildOutputs",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 92,
+          "character": 6
+        },
+        "end": {
+          "line": 100,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "6adcb31d02211bec61575ec0615e9922",
+    "name": "commonjs",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 3,
+          "character": 6
+        },
+        "end": {
+          "line": 3,
+          "character": 50
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "b4423d7797f6f0f4e647e3ba1578531f",
+    "name": "components",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 40,
+          "character": 6
+        },
+        "end": {
+          "line": 51,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "e298a26eb6a6088f76a1bb12cbcbdc68",
+    "name": "minify",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 2,
+          "character": 6
+        },
+        "end": {
+          "line": 2,
+          "character": 52
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "269f524c1d1b0e0c5cbaad87dc61cd7a",
+    "name": "nodeResolve",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 6
+        },
+        "end": {
+          "line": 4,
+          "character": 57
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "cea47a421329af33a334a51527b5ce59",
+    "name": "outputs",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 62,
+          "character": 6
+        },
+        "end": {
+          "line": 79,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "0279f512823b3be418a742015af00de4",
+    "name": "pluginSetups",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 6
+        },
+        "end": {
+          "line": 39,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "374a771dd68c893bfeaf9b8d8928b6d3",
+    "name": "processes",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 52,
+          "character": 6
+        },
+        "end": {
+          "line": 61,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "47abc4a2cbb0a919aaba322c6c86c15c",
+    "name": "rollup",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/tasks/build.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 6
+        },
+        "end": {
+          "line": 0,
+          "character": 32
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "aa3a56ccd7257a58458e4d4e7002eb8e",
+    "name": "anchorHash",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/linenumber.js",
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 33
+        },
+        "end": {
+          "line": 4,
+          "character": 43
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "5a8966103420452b11679677657bc7c2",
+    "name": "i",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/linenumber.js",
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 6
+        },
+        "end": {
+          "line": 6,
+          "character": 11
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "73dd5ec59034c0d9a2323c055ab0ec26",
+    "name": "lineId",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/linenumber.js",
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 6
+        },
+        "end": {
+          "line": 4,
+          "character": 12
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "6086717e1bc33437a6dfea205f83586f",
+    "name": "lineNumber",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/linenumber.js",
+      "range": {
+        "start": {
+          "line": 7,
+          "character": 6
+        },
+        "end": {
+          "line": 7,
+          "character": 20
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "d01d509fc150f219885e9ea6cfb1328b",
+    "name": "lines",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/linenumber.js",
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 14
+        },
+        "end": {
+          "line": 4,
+          "character": 19
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "4772f5dbdb9c80914208917f2e66730c",
+    "name": "source",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/linenumber.js",
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 6
+        },
+        "end": {
+          "line": 5,
+          "character": 77
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "e597119622bc00bd63803df7290d2dfb",
+    "name": "totalLines",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/linenumber.js",
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 21
+        },
+        "end": {
+          "line": 4,
+          "character": 31
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "dca4799c812b3a23072b980bfadfab0b",
+    "name": "currentSectionNav",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 3,
+          "character": 6
+        },
+        "end": {
+          "line": 3,
+          "character": 23
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "7b455f1d7cfdb75f2a0054b36bdb30e1",
+    "name": "target",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 3,
+          "character": 25
+        },
+        "end": {
+          "line": 3,
+          "character": 31
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "ca63410a725c42ea4e0082d5ccf136e0",
+    "name": "getCurrentHashName",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 77,
+          "character": 0
+        },
+        "end": {
+          "line": 88,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "839646e2254a05c010d8687267158470",
+    "name": "pageSubSectionHash",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 79,
+          "character": 6
+        },
+        "end": {
+          "line": 79,
+          "character": 47
+        }
+      }
+    },
+    "containerName": "getCurrentHashName"
+  },
+  {
+    "symbolID": "22a8d5a80fb5742dda77f0e36e306fcd",
+    "name": "pageSubSectionId",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 78,
+          "character": 6
+        },
+        "end": {
+          "line": 78,
+          "character": 22
+        }
+      }
+    },
+    "containerName": "getCurrentHashName"
+  },
+  {
+    "symbolID": "a4056ca6ed2a958c6761dc4e7eb64b8d",
+    "name": "getCurrentSectionName",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 65,
+          "character": 0
+        },
+        "end": {
+          "line": 75,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "5dd85aca57b236f9935acd3d7f18f49a",
+    "name": "pageUrl",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 67,
+          "character": 6
+        },
+        "end": {
+          "line": 67,
+          "character": 37
+        }
+      }
+    },
+    "containerName": "getCurrentSectionName"
+  },
+  {
+    "symbolID": "5b2ecfa10b9d1c3a8fa21ceeb3dbc61e",
+    "name": "path",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 66,
+          "character": 6
+        },
+        "end": {
+          "line": 66,
+          "character": 37
+        }
+      }
+    },
+    "containerName": "getCurrentSectionName"
+  },
+  {
+    "symbolID": "c6f9170dfa07b835b88f96a82b352ec4",
+    "name": "sectionName",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 69,
+          "character": 6
+        },
+        "end": {
+          "line": 69,
+          "character": 62
+        }
+      }
+    },
+    "containerName": "getCurrentSectionName"
+  },
+  {
+    "symbolID": "3c5a81242cc1853a579f7b96ab24bd5c",
+    "name": "highlightActiveHash",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 38,
+          "character": 0
+        },
+        "end": {
+          "line": 57,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "bd5752236dd403db701f4ba28c0da600",
+    "name": "oldSubSectionElement",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 39,
+          "character": 14
+        },
+        "end": {
+          "line": 39,
+          "character": 34
+        }
+      }
+    },
+    "containerName": "highlightActiveHash"
+  },
+  {
+    "symbolID": "c76c81a4bf2e9b18a23c4ce45d343b9d",
+    "name": "oldUrl",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 39,
+          "character": 6
+        },
+        "end": {
+          "line": 39,
+          "character": 12
+        }
+      }
+    },
+    "containerName": "highlightActiveHash"
+  },
+  {
+    "symbolID": "d5c56eaeacfd7630aa0cc81979100c73",
+    "name": "highlightActiveSection",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 59,
+          "character": 0
+        },
+        "end": {
+          "line": 63,
+          "character": 1
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "defff9e8e4b0947f222be7c4f48087e8",
+    "name": "pageId",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/docs/scripts/pagelocation.js",
+      "range": {
+        "start": {
+          "line": 60,
+          "character": 6
+        },
+        "end": {
+          "line": 60,
+          "character": 38
+        }
+      }
+    },
+    "containerName": "highlightActiveSection"
+  },
+  {
+    "symbolID": "85ed8a0644a8f8b845db5be05175cf6d",
+    "name": "\"assert\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/assert.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 61,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "79a68a4757429f807c9eea24f88838d5",
+    "name": "areValidRatios",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/assert.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 23
+        },
+        "end": {
+          "line": 0,
+          "character": 37
+        }
+      }
+    },
+    "containerName": "\"assert\""
+  },
+  {
+    "symbolID": "a9dbfbd06aafe4811c4cb4edc4e80fd9",
+    "name": "assert",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/assert.js",
+      "range": {
+        "start": {
+          "line": 11,
+          "character": 0
+        },
+        "end": {
+          "line": 13,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"assert\""
+  },
+  {
+    "symbolID": "9d2a762b1501ea53707e3d9a347c6998",
+    "name": "assertInteger",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/assert.js",
+      "range": {
+        "start": {
+          "line": 55,
+          "character": 0
+        },
+        "end": {
+          "line": 60,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"assert\""
+  },
+  {
+    "symbolID": "d39613a7ff9a3a5868858612f65a5e2e",
+    "name": "assertPercentage",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/assert.js",
+      "range": {
+        "start": {
+          "line": 23,
+          "character": 0
+        },
+        "end": {
+          "line": 28,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"assert\""
+  },
+  {
+    "symbolID": "8298a94c002536d0c0a2e7ae07449ceb",
+    "name": "assertValidRatios",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/assert.js",
+      "range": {
+        "start": {
+          "line": 38,
+          "character": 0
+        },
+        "end": {
+          "line": 45,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"assert\""
+  },
+  {
+    "symbolID": "227d4efcecde8399cfaf300b85cdfc72",
+    "name": "isPercentage",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/assert.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 9
+        },
+        "end": {
+          "line": 0,
+          "character": 21
+        }
+      }
+    },
+    "containerName": "\"assert\""
+  },
+  {
+    "symbolID": "f7a59b7e79e62755164119fced16709e",
+    "name": "\"calculator\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 122,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "85a1bd4b7c0945e7d850b59dcf0c19e2",
+    "name": "Calculator",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 2,
+          "character": 0
+        },
+        "end": {
+          "line": 121,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"calculator\""
+  },
+  {
+    "symbolID": "43a8a8f452c1b0ae19904c8ccd2f57f4",
+    "name": "add",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 57,
+          "character": 4
+        },
+        "end": {
+          "line": 59,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Calculator"
+  },
+  {
+    "symbolID": "87ea33f3877d2410a22287726d3bcb6c",
+    "name": "divide",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 93,
+          "character": 4
+        },
+        "end": {
+          "line": 95,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Calculator"
+  },
+  {
+    "symbolID": "e8a0a373b94bb156118097007add3c64",
+    "name": "floatMultiply",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 3,
+          "character": 8
+        },
+        "end": {
+          "line": 7,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "Calculator"
+  },
+  {
+    "symbolID": "770964c8a08f9d372e4445245fafd3a8",
+    "name": "factor",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 10
+        },
+        "end": {
+          "line": 5,
+          "character": 55
+        }
+      }
+    },
+    "containerName": "floatMultiply"
+  },
+  {
+    "symbolID": "db3907ca254f99a9178ebd483622950d",
+    "name": "getFactor",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 10
+        },
+        "end": {
+          "line": 4,
+          "character": 73
+        }
+      }
+    },
+    "containerName": "floatMultiply"
+  },
+  {
+    "symbolID": "cc91cf829522cbe4c09f70805273b8af",
+    "name": "modulo",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 105,
+          "character": 4
+        },
+        "end": {
+          "line": 107,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Calculator"
+  },
+  {
+    "symbolID": "91e5e3803359e5626b365cd5865f44e1",
+    "name": "multiply",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 81,
+          "character": 4
+        },
+        "end": {
+          "line": 83,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Calculator"
+  },
+  {
+    "symbolID": "d43518e2279f373e1888771a41e657d2",
+    "name": "round",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 117,
+          "character": 4
+        },
+        "end": {
+          "line": 119,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Calculator"
+  },
+  {
+    "symbolID": "44b3b484b89caa70e787763a71ad2083",
+    "name": "roundingModes",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 9,
+          "character": 8
+        },
+        "end": {
+          "line": 45,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "Calculator"
+  },
+  {
+    "symbolID": "6c9bcac8a560520b6534e3bfaa2ca853",
+    "name": "DOWN",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 42,
+          "character": 4
+        },
+        "end": {
+          "line": 44,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "roundingModes"
+  },
+  {
+    "symbolID": "20b6d70add03cd4b8129bb561b6633f8",
+    "name": "HALF_AWAY_FROM_ZERO",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 37,
+          "character": 4
+        },
+        "end": {
+          "line": 41,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "roundingModes"
+  },
+  {
+    "symbolID": "e17629dc42c33b0db9c4e2600a0c1cd7",
+    "name": "HALF_DOWN",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 29,
+          "character": 4
+        },
+        "end": {
+          "line": 31,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "roundingModes"
+  },
+  {
+    "symbolID": "dfee1cedfd58158fd39ff925e7a39588",
+    "name": "HALF_EVEN",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 18,
+          "character": 4
+        },
+        "end": {
+          "line": 25,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "roundingModes"
+  },
+  {
+    "symbolID": "76c27931fae5826ff3d787f06a3c4fa6",
+    "name": "rounded",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 19,
+          "character": 12
+        },
+        "end": {
+          "line": 19,
+          "character": 40
+        }
+      }
+    },
+    "containerName": "HALF_EVEN"
+  },
+  {
+    "symbolID": "ecc7a6aa497f743655618f0f416eedf1",
+    "name": "HALF_ODD",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 10,
+          "character": 4
+        },
+        "end": {
+          "line": 17,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "roundingModes"
+  },
+  {
+    "symbolID": "67ff3c63e796cddd5491a54f4cbd16df",
+    "name": "rounded",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 11,
+          "character": 12
+        },
+        "end": {
+          "line": 11,
+          "character": 40
+        }
+      }
+    },
+    "containerName": "HALF_ODD"
+  },
+  {
+    "symbolID": "54ccb4c81e068325152e42e7904e71b7",
+    "name": "HALF_TOWARDS_ZERO",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 32,
+          "character": 4
+        },
+        "end": {
+          "line": 36,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "roundingModes"
+  },
+  {
+    "symbolID": "acf53c1b9f5d16263ee570f1c1e720bf",
+    "name": "HALF_UP",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 26,
+          "character": 4
+        },
+        "end": {
+          "line": 28,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "roundingModes"
+  },
+  {
+    "symbolID": "7a34d0bdc7b5097e568dbae02ff737fa",
+    "name": "subtract",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 69,
+          "character": 4
+        },
+        "end": {
+          "line": 71,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Calculator"
+  },
+  {
+    "symbolID": "15fce403a60c3a58eef8b4aecbc6cbfa",
+    "name": "countFractionDigits",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 26
+        },
+        "end": {
+          "line": 0,
+          "character": 45
+        }
+      }
+    },
+    "containerName": "\"calculator\""
+  },
+  {
+    "symbolID": "0c7abc91133daad0e67ce303940e2617",
+    "name": "isEven",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 9
+        },
+        "end": {
+          "line": 0,
+          "character": 15
+        }
+      }
+    },
+    "containerName": "\"calculator\""
+  },
+  {
+    "symbolID": "9e1c22bdcdc39851712407022a02e0ca",
+    "name": "isFloat",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 17
+        },
+        "end": {
+          "line": 0,
+          "character": 24
+        }
+      }
+    },
+    "containerName": "\"calculator\""
+  },
+  {
+    "symbolID": "fb90def03c6a147ddc8712cf6fdbce66",
+    "name": "isHalf",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/calculator.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 47
+        },
+        "end": {
+          "line": 0,
+          "character": 53
+        }
+      }
+    },
+    "containerName": "\"calculator\""
+  },
+  {
+    "symbolID": "4e409b47e2011e1e1af642a3ea6335a9",
+    "name": "\"currency-converter\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 38,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "4ef230a66d43f1ca1c6d84c16d26c6dd",
+    "name": "CurrencyConverter",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 2,
+          "character": 0
+        },
+        "end": {
+          "line": 37,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"currency-converter\""
+  },
+  {
+    "symbolID": "8b8de20aef3c56236d790ac07dd24c71",
+    "name": "getExchangeRate",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 27,
+          "character": 4
+        },
+        "end": {
+          "line": 35,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "CurrencyConverter"
+  },
+  {
+    "symbolID": "2b3fe4133a3103c9fa47517e992594b6",
+    "name": "getRatesFromRestApi",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 12,
+          "character": 8
+        },
+        "end": {
+          "line": 15,
+          "character": 6
+        }
+      }
+    },
+    "containerName": "CurrencyConverter"
+  },
+  {
+    "symbolID": "42764cf7099dc4478c2079dc8de210ec",
+    "name": "mergeTags",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 4,
+          "character": 8
+        },
+        "end": {
+          "line": 9,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "CurrencyConverter"
+  },
+  {
+    "symbolID": "e417d5a13e5b8d2e36fac1a7dbccb6de",
+    "name": "tag",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 15
+        },
+        "end": {
+          "line": 5,
+          "character": 18
+        }
+      }
+    },
+    "containerName": "mergeTags"
+  },
+  {
+    "symbolID": "d1df1210c3062d4d6be2f1e4fec6802b",
+    "name": "flattenObject",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 18
+        },
+        "end": {
+          "line": 0,
+          "character": 31
+        }
+      }
+    },
+    "containerName": "\"currency-converter\""
+  },
+  {
+    "symbolID": "59fcd76c676f51a52db1b3c7ac917adc",
+    "name": "getJSON",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 9
+        },
+        "end": {
+          "line": 0,
+          "character": 16
+        }
+      }
+    },
+    "containerName": "\"currency-converter\""
+  },
+  {
+    "symbolID": "cf47223e06f981c685d87aba28e3b51c",
+    "name": "isThenable",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/currency-converter.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 33
+        },
+        "end": {
+          "line": 0,
+          "character": 43
+        }
+      }
+    },
+    "containerName": "\"currency-converter\""
+  },
+  {
+    "symbolID": "878a12c3822f188738b52e38dfd3175d",
+    "name": "\"format\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 76,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "0dd7691a7c9812e3cecb6047ab4997cf",
+    "name": "calculator",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 3,
+          "character": 6
+        },
+        "end": {
+          "line": 3,
+          "character": 31
+        }
+      }
+    },
+    "containerName": "\"format\""
+  },
+  {
+    "symbolID": "ee5fb57387842ea9498c37e2b7ab2fc6",
+    "name": "Calculator",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 17
+        }
+      }
+    },
+    "containerName": "\"format\""
+  },
+  {
+    "symbolID": "0bedda77602e6d9f0c3eeb0fb2fb98ec",
+    "name": "Format",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 5,
+          "character": 0
+        },
+        "end": {
+          "line": 75,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"format\""
+  },
+  {
+    "symbolID": "202f8bf235ab1e953eff0fab16321dce",
+    "name": "getCurrencyDisplay",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 42,
+          "character": 4
+        },
+        "end": {
+          "line": 53,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Format"
+  },
+  {
+    "symbolID": "05005a842782c332a365ac919a3e1e5c",
+    "name": "modes",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 43,
+          "character": 12
+        },
+        "end": {
+          "line": 47,
+          "character": 7
+        }
+      }
+    },
+    "containerName": "getCurrencyDisplay"
+  },
+  {
+    "symbolID": "731ad2c6f7c9a42d76ece23e0b2ec03e",
+    "name": "getMatches",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 17,
+          "character": 4
+        },
+        "end": {
+          "line": 21,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Format"
+  },
+  {
+    "symbolID": "12cec70c11d692c7b66b6eab2b2d9745",
+    "name": "getMinimumFractionDigits",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 28,
+          "character": 4
+        },
+        "end": {
+          "line": 35,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Format"
+  },
+  {
+    "symbolID": "ba7be5995b272bb5ef13af84c13d49e0",
+    "name": "decimalPosition",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 29,
+          "character": 12
+        },
+        "end": {
+          "line": 29,
+          "character": 52
+        }
+      }
+    },
+    "containerName": "getMinimumFractionDigits"
+  },
+  {
+    "symbolID": "5c7f2825a18a6b0c17bdcf4e1e8eca05",
+    "name": "getStyle",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 60,
+          "character": 4
+        },
+        "end": {
+          "line": 64,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Format"
+  },
+  {
+    "symbolID": "93737b9e4768c212e5039a04bee5f844",
+    "name": "getUseGrouping",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 71,
+          "character": 4
+        },
+        "end": {
+          "line": 73,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "Format"
+  },
+  {
+    "symbolID": "151873250e35c8dc00d3dd15d1067620",
+    "name": "matches",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 6,
+          "character": 8
+        },
+        "end": {
+          "line": 8,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "Format"
+  },
+  {
+    "symbolID": "03cec6a89b6949098bb8c0b7afbaca25",
+    "name": "isUndefined",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/format.js",
+      "range": {
+        "start": {
+          "line": 1,
+          "character": 9
+        },
+        "end": {
+          "line": 1,
+          "character": 20
+        }
+      }
+    },
+    "containerName": "\"format\""
+  },
+  {
+    "symbolID": "058b4099cb5c12c43e0fef02da9e1560",
+    "name": "\"helpers\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 183,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "89dc828ee53c9f1847b2f9cc66c3bd40",
+    "name": "areValidRatios",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 32,
+          "character": 0
+        },
+        "end": {
+          "line": 34,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "5802807e11b696165b933a15b7766189",
+    "name": "countFractionDigits",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 68,
+          "character": 0
+        },
+        "end": {
+          "line": 71,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "df09b09ccfd09552afc61cba4f42169c",
+    "name": "fractionDigits",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 69,
+          "character": 8
+        },
+        "end": {
+          "line": 69,
+          "character": 56
+        }
+      }
+    },
+    "containerName": "countFractionDigits"
+  },
+  {
+    "symbolID": "7ed48f593b33d1fac7dbdce62dad2175",
+    "name": "flattenObject",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 153,
+          "character": 0
+        },
+        "end": {
+          "line": 166,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "9b2a7a91a7e506b1015b47d33d8efd8f",
+    "name": "flatObject",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 157,
+          "character": 12
+        },
+        "end": {
+          "line": 157,
+          "character": 47
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "910d6dab1306e0ff6e3a16a8aac37f42",
+    "name": "finalObject",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 154,
+          "character": 8
+        },
+        "end": {
+          "line": 154,
+          "character": 24
+        }
+      }
+    },
+    "containerName": "flattenObject"
+  },
+  {
+    "symbolID": "3b5f05464844c0a620c2d9cd3e7c25fa",
+    "name": "getJSON",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 97,
+          "character": 0
+        },
+        "end": {
+          "line": 116,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "09d2c76c06e1dae164379c541c504e5f",
+    "name": "request",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 99,
+          "character": 10
+        },
+        "end": {
+          "line": 110,
+          "character": 6
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "2220e6aab32e72019eea18843bbef816",
+    "name": "onerror",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 107,
+          "character": 6
+        },
+        "end": {
+          "line": 109,
+          "character": 7
+        }
+      }
+    },
+    "containerName": "request"
+  },
+  {
+    "symbolID": "a5b8a43bb9568b0388fd42b65d1f5ae7",
+    "name": "onreadystatechange",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 100,
+          "character": 6
+        },
+        "end": {
+          "line": 106,
+          "character": 7
+        }
+      }
+    },
+    "containerName": "request"
+  },
+  {
+    "symbolID": "e9fd899db762d714f8c64ce42fc0e52d",
+    "name": "isEven",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 44,
+          "character": 0
+        },
+        "end": {
+          "line": 46,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "ce3e6500ecda96dd6a2454186dc72458",
+    "name": "isFloat",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 56,
+          "character": 0
+        },
+        "end": {
+          "line": 58,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "8ef121a18a417dd74696716f39a063ac",
+    "name": "isHalf",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 81,
+          "character": 0
+        },
+        "end": {
+          "line": 83,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "0af46ae0439a144461b9042645d13727",
+    "name": "isNumeric",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 8,
+          "character": 0
+        },
+        "end": {
+          "line": 10,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "64eb3363bc679eee9e8ba5c18bb8083c",
+    "name": "isPercentage",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 20,
+          "character": 0
+        },
+        "end": {
+          "line": 22,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "f8ffa324bfcb30245131fa8ac0ddcc85",
+    "name": "isThenable",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 176,
+          "character": 0
+        },
+        "end": {
+          "line": 182,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "c54d1f0ecf2f24067a9182552d6c90ee",
+    "name": "isUndefined",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 140,
+          "character": 0
+        },
+        "end": {
+          "line": 142,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "f91c25681e6c02d0ab74bf5d46f8d9b2",
+    "name": "setXHRHeaders",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 127,
+          "character": 0
+        },
+        "end": {
+          "line": 130,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"helpers\""
+  },
+  {
+    "symbolID": "28e9ed0272c8b4e595a229e927adfef8",
+    "name": "header",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/helpers.js",
+      "range": {
+        "start": {
+          "line": 128,
+          "character": 13
+        },
+        "end": {
+          "line": 128,
+          "character": 19
+        }
+      }
+    },
+    "containerName": "setXHRHeaders"
+  },
+  {
+    "symbolID": "84caa87e712eeac073ac9f2b16b395c3",
+    "name": "\"settings\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/settings.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 62,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "e8efb220faef7e6da3a91d2226693ce9",
+    "name": "Defaults",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/settings.js",
+      "range": {
+        "start": {
+          "line": 16,
+          "character": 13
+        },
+        "end": {
+          "line": 20,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"settings\""
+  },
+  {
+    "symbolID": "d8dca02538ad563598b99d44be1a3db2",
+    "name": "Globals",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/settings.js",
+      "range": {
+        "start": {
+          "line": 51,
+          "character": 13
+        },
+        "end": {
+          "line": 61,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"settings\""
+  },
+  {
+    "symbolID": "94a3e9aa9395e27d6f09a6b9c62117da",
+    "name": "\"static\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 103,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "8b72ad2a10667adad8f330497289e38a",
+    "name": "maximum",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 92,
+          "character": 2
+        },
+        "end": {
+          "line": 101,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "\"static\""
+  },
+  {
+    "symbolID": "643ec12a2e9b33d194c93f2b06ea821c",
+    "name": "currentMaximum",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 94,
+          "character": 8
+        },
+        "end": {
+          "line": 94,
+          "character": 36
+        }
+      }
+    },
+    "containerName": "maximum"
+  },
+  {
+    "symbolID": "3cf298e67bea1dace27ab3f7ce2a3643",
+    "name": "firstObject",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 93,
+          "character": 11
+        },
+        "end": {
+          "line": 93,
+          "character": 22
+        }
+      }
+    },
+    "containerName": "maximum"
+  },
+  {
+    "symbolID": "251910a14b3f51c5491b5cef265d659e",
+    "name": "tailObjects",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 93,
+          "character": 24
+        },
+        "end": {
+          "line": 93,
+          "character": 38
+        }
+      }
+    },
+    "containerName": "maximum"
+  },
+  {
+    "symbolID": "d251d46b9c3802f641eb0f817e03f40b",
+    "name": "minimum",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 59,
+          "character": 2
+        },
+        "end": {
+          "line": 68,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "\"static\""
+  },
+  {
+    "symbolID": "cb794a4bfb9ec7ba810c016e1a61ad65",
+    "name": "currentMinimum",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 61,
+          "character": 8
+        },
+        "end": {
+          "line": 61,
+          "character": 36
+        }
+      }
+    },
+    "containerName": "minimum"
+  },
+  {
+    "symbolID": "5e345116a590031688fc8b37b6839652",
+    "name": "firstObject",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 60,
+          "character": 11
+        },
+        "end": {
+          "line": 60,
+          "character": 22
+        }
+      }
+    },
+    "containerName": "minimum"
+  },
+  {
+    "symbolID": "9d1e5555bb1205b4dbf95094a29b7d22",
+    "name": "tailObjects",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 60,
+          "character": 24
+        },
+        "end": {
+          "line": 60,
+          "character": 38
+        }
+      }
+    },
+    "containerName": "minimum"
+  },
+  {
+    "symbolID": "6166be3ba3f98a698b730a02430ddce1",
+    "name": "normalizePrecision",
+    "kind": 6,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 26,
+          "character": 2
+        },
+        "end": {
+          "line": 35,
+          "character": 3
+        }
+      }
+    },
+    "containerName": "\"static\""
+  },
+  {
+    "symbolID": "5e2329e808e20c864ded1e11c774e106",
+    "name": "highestPrecision",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/src/services/static.js",
+      "range": {
+        "start": {
+          "line": 27,
+          "character": 10
+        },
+        "end": {
+          "line": 29,
+          "character": 5
+        }
+      }
+    },
+    "containerName": "normalizePrecision"
+  },
+  {
+    "symbolID": "b9bc8329102a0040f8624035d689841e",
+    "name": "\"dinero.spec\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/property/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 157,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "475f6860f12eb96f7a7c476162978b56",
+    "name": "Dinero",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/property/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 13
+        }
+      }
+    },
+    "containerName": "\"dinero.spec\""
+  },
+  {
+    "symbolID": "1013ae079b9ec98833db60d550e85233",
+    "name": "jsc",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/property/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 1,
+          "character": 7
+        },
+        "end": {
+          "line": 1,
+          "character": 10
+        }
+      }
+    },
+    "containerName": "\"dinero.spec\""
+  },
+  {
+    "symbolID": "a863a025e53fb7710a330b3416cc7275",
+    "name": "\"helpers.spec\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/property/helpers.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 42,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "c3f964299ed1a565816024db8a8bd552",
+    "name": "Helpers",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/property/helpers.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 19
+        }
+      }
+    },
+    "containerName": "\"helpers.spec\""
+  },
+  {
+    "symbolID": "ba73fd01653df691b8b82b0e542e7597",
+    "name": "jsc",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/property/helpers.spec.js",
+      "range": {
+        "start": {
+          "line": 1,
+          "character": 7
+        },
+        "end": {
+          "line": 1,
+          "character": 10
+        }
+      }
+    },
+    "containerName": "\"helpers.spec\""
+  },
+  {
+    "symbolID": "5b501a59754b983ce1093a1780bb8685",
+    "name": "\"assert.spec\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/assert.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 36,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "b36a340edef6e89a51cf9013b31a4dd4",
+    "name": "Assert",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/assert.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 18
+        }
+      }
+    },
+    "containerName": "\"assert.spec\""
+  },
+  {
+    "symbolID": "77732e1dffb1516653e7cbbdb854d2e4",
+    "name": "\"calculator.spec\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/calculator.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 172,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "6728351a7b49977fd2f7d0e1549a517c",
+    "name": "calculator",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/calculator.spec.js",
+      "range": {
+        "start": {
+          "line": 2,
+          "character": 6
+        },
+        "end": {
+          "line": 2,
+          "character": 31
+        }
+      }
+    },
+    "containerName": "\"calculator.spec\""
+  },
+  {
+    "symbolID": "d38cd4e50352d07870bb4985e678aaa8",
+    "name": "Calculator",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/calculator.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 17
+        }
+      }
+    },
+    "containerName": "\"calculator.spec\""
+  },
+  {
+    "symbolID": "2f7f5419f12f87ce98f1428c41c8d2f4",
+    "name": "\"currency-converter.spec\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/currency-converter.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 55,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "81ee6ef1a416630866fe69af17356804",
+    "name": "CurrencyConverter",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/currency-converter.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 24
+        }
+      }
+    },
+    "containerName": "\"currency-converter.spec\""
+  },
+  {
+    "symbolID": "c1d4a10ee0012fb571b3896029638b33",
+    "name": "getJSON",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/currency-converter.spec.js",
+      "range": {
+        "start": {
+          "line": 1,
+          "character": 9
+        },
+        "end": {
+          "line": 1,
+          "character": 16
+        }
+      }
+    },
+    "containerName": "\"currency-converter.spec\""
+  },
+  {
+    "symbolID": "a2f5aeb22a53ffbc66f7e4951be424f4",
+    "name": "options",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/currency-converter.spec.js",
+      "range": {
+        "start": {
+          "line": 9,
+          "character": 6
+        },
+        "end": {
+          "line": 16,
+          "character": 1
+        }
+      }
+    },
+    "containerName": "\"currency-converter.spec\""
+  },
+  {
+    "symbolID": "ca7c1bbdcff3ee359b14c2ae75e1d2ff",
+    "name": "\"dinero.spec\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 727,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "6fbe7237e22b23cb1c49c70e7f713ec7",
+    "name": "price",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 61,
+          "character": 12
+        },
+        "end": {
+          "line": 61,
+          "character": 28
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "0401832f1b7ccedce378009ba1e79fcb",
+    "name": "shares",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 240,
+          "character": 12
+        },
+        "end": {
+          "line": 240,
+          "character": 64
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "0dc534cfe0a94e70b39537a57baaff19",
+    "name": "shares",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 245,
+          "character": 12
+        },
+        "end": {
+          "line": 245,
+          "character": 61
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "5852b7025804ae6bfb831afac368e01c",
+    "name": "res",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 270,
+          "character": 12
+        },
+        "end": {
+          "line": 277,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "d83774add0cc7eaa6fcc9f4daa7d5842",
+    "name": "res",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 284,
+          "character": 12
+        },
+        "end": {
+          "line": 292,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "6ec5ff937cda99a17715575a3632151d",
+    "name": "res",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 300,
+          "character": 12
+        },
+        "end": {
+          "line": 310,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "5d3345c3f54cb1c9e3ca67a4c140150d",
+    "name": "res",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 318,
+          "character": 12
+        },
+        "end": {
+          "line": 325,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "40419a05f2eb5be4421cb2a440441255",
+    "name": "price",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 664,
+          "character": 12
+        },
+        "end": {
+          "line": 664,
+          "character": 74
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "9340e52360cc9eae5fd56205d220a6b9",
+    "name": "price",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 668,
+          "character": 12
+        },
+        "end": {
+          "line": 668,
+          "character": 74
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "7f3efc8ca1d8d5589e92cbebd5f04416",
+    "name": "normalized",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 676,
+          "character": 12
+        },
+        "end": {
+          "line": 679,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "e411ae1530b6fc12867dee1478100b4c",
+    "name": "actualMinimum",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 689,
+          "character": 12
+        },
+        "end": {
+          "line": 693,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "915261689f89f8d63026e2f6d3b68c4b",
+    "name": "minimumDineroExpected",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 688,
+          "character": 12
+        },
+        "end": {
+          "line": 688,
+          "character": 72
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "6924045908e62d84495f356e72e5615a",
+    "name": "actualMinimum",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 698,
+          "character": 12
+        },
+        "end": {
+          "line": 702,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "c67ca26a88ab120509bae01e9477152a",
+    "name": "minimumDineroExpected",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 697,
+          "character": 12
+        },
+        "end": {
+          "line": 697,
+          "character": 73
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "df9985dd273c9ed092eb1c1e6b8764cc",
+    "name": "actualMaximum",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 709,
+          "character": 12
+        },
+        "end": {
+          "line": 713,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "b6c54b3f9f82ceecb4f26681bdacb40f",
+    "name": "maximumDineroExpected",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 708,
+          "character": 12
+        },
+        "end": {
+          "line": 708,
+          "character": 73
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "b5b875b66fdba0e8d7b1abf671d4bd42",
+    "name": "actualMaximum",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 718,
+          "character": 12
+        },
+        "end": {
+          "line": 722,
+          "character": 8
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "f97abbb04c4908a89afd9b397eabeee6",
+    "name": "maximumDineroExpected",
+    "kind": 14,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 717,
+          "character": 12
+        },
+        "end": {
+          "line": 717,
+          "character": 72
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "3d345b8e8de6c292ccc758276d978b1d",
+    "name": "Dinero",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 13
+        }
+      }
+    },
+    "containerName": "\"dinero.spec\""
+  },
+  {
+    "symbolID": "7366f1313ac8e2a4d9bfedb3614f5120",
+    "name": "getJSON",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/dinero.spec.js",
+      "range": {
+        "start": {
+          "line": 1,
+          "character": 9
+        },
+        "end": {
+          "line": 1,
+          "character": 16
+        }
+      }
+    },
+    "containerName": "\"dinero.spec\""
+  },
+  {
+    "symbolID": "64909581cb08ac3fcc24309abe5bd64f",
+    "name": "\"format.spec\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/format.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 56,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "6338aaf2d6c7d9cb3a632ace73ca15e9",
+    "name": "Format",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/format.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 13
+        }
+      }
+    },
+    "containerName": "\"format.spec\""
+  },
+  {
+    "symbolID": "178795e180cb3c6b421542dad876fde9",
+    "name": "\"helpers.spec\"",
+    "kind": 2,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/helpers.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 0
+        },
+        "end": {
+          "line": 178,
+          "character": 0
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "daf1248c8df9eba2233449860705239c",
+    "name": "then",
+    "kind": 12,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/helpers.spec.js",
+      "range": {
+        "start": {
+          "line": 174,
+          "character": 40
+        },
+        "end": {
+          "line": 174,
+          "character": 47
+        }
+      }
+    }
+  },
+  {
+    "symbolID": "aba61296517f63e3a620f90139af90a6",
+    "name": "Helpers",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/helpers.spec.js",
+      "range": {
+        "start": {
+          "line": 0,
+          "character": 7
+        },
+        "end": {
+          "line": 0,
+          "character": 19
+        }
+      }
+    },
+    "containerName": "\"helpers.spec\""
+  },
+  {
+    "symbolID": "5583413c0ec7f59d6fc6583d847eef5c",
+    "name": "mockXHR",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/helpers.spec.js",
+      "range": {
+        "start": {
+          "line": 2,
+          "character": 4
+        },
+        "end": {
+          "line": 2,
+          "character": 18
+        }
+      }
+    },
+    "containerName": "\"helpers.spec\""
+  },
+  {
+    "symbolID": "b542aa039253da502d17a18098bec8a6",
+    "name": "request",
+    "kind": 13,
+    "location": {
+      "uri": "file:///tmp/dinero.js/test/unit/helpers.spec.js",
+      "range": {
+        "start": {
+          "line": 3,
+          "character": 4
+        },
+        "end": {
+          "line": 3,
+          "character": 18
+        }
+      }
+    },
+    "containerName": "\"helpers.spec\""
+  }
+]
