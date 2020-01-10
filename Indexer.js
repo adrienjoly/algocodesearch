@@ -20,7 +20,7 @@ const hash = str =>
 
 const makeSymbolID = symbol => hash(JSON.stringify(symbol));
 
-const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver
+const LANGUAGE_SERVER_PORT = 2089; // e.g. javascript-typescript-langserver, go-langserver
 
 async function getRefs(connection, fileURI, position) {
   return await connection.sendRequest(ReferencesRequest.type, {
@@ -122,6 +122,11 @@ class Indexer {
           symbol.location.uri,
           range.start
         );
+        // if (refsRes.length === 0) {
+        //   console.log(chalk.red(
+        //     `NO REFS FOR ` + symbol.name,
+        //   ));
+        // }
         refsRes.forEach(ref =>
           refs.push({
             symbolID: symbol.symbolID,

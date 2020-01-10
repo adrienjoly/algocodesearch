@@ -17,6 +17,8 @@ Use cases:
 
 - Launch the Language Server in one terminal:
 
+**JavaScript/TypeScript**
+
 ```sh
 $ git clone https://github.com/sourcegraph/javascript-typescript-langserver.git
 $ cd javascript-typescript-langserver
@@ -25,13 +27,19 @@ $ npm run build
 $ node lib/language-server --trace
 ```
 
+**Go**
+
+# Install https://github.com/golang/tools/tree/master/gopls
+$ gopls -v serve -rpc.trace --port 2089 --debug=localhost:6060 -logfile /tmp/log.log -listen 127.0.0.1:2089
+
 - Run the client in a separate terminal:
 
 ```sh
 $ git clone https://github.com/adrienjoly/algocodesearch.git
 $ cd algocodesearch
 $ npm install
-$ npm run test:server
+$ npm run test:js # with js lsp running
+$ npm run test:go # with go lsp running
 ```
 
 This should send a LSP request to the server and print the response to stdout.
@@ -42,8 +50,8 @@ This should send a LSP request to the server and print the response to stdout.
 # git clone https://github.com/adrienjoly/algocodesearch.git
 # cd algocodesearch
 # npm install
-$ node indexing.js ../my-js-project/
-# => will generate index-symbols.json and index-refs.json
+$ node indexing.js ../my-js-project/ "output-file-prefix"
+# => will generate output-file-prefix-index-symbols.json and output-file-prefix-index-refs.json
 ```
 
 - Then you can import these 2 files into Algolia indices

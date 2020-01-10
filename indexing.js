@@ -4,7 +4,8 @@ const JavaScriptIndexer = require('./JavaScriptIndexer');
 const { writeFile } = require('fs');
 const { promisify } = require('util');
 
-const repodir = path.resolve(process.argv[2] || "../javascript-typescript-langserver/src");
+const repodir = path.resolve(process.argv[2]);
+const outputName = path.resolve(process.argv[3]);
 
 console.warn(`Indexing ${repodir}...`);
 
@@ -15,8 +16,9 @@ console.warn(`Indexing ${repodir}...`);
 
   // Generate 2 json files
   const promiseWriteFile = promisify(writeFile);
-  await promiseWriteFile("index-symbols-v2.json", JSON.stringify(symbols, null, 2));
-  await promiseWriteFile("index-refs-v2.json", JSON.stringify(refs, null, 2));
+
+  await promiseWriteFile(outputName + "-index-symbols.json", JSON.stringify(symbols, null, 2));
+  await promiseWriteFile(outputName + "-index-refs.json", JSON.stringify(refs, null, 2));
 
   process.exit(0);
 })();

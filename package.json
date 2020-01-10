@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:server": "node test-server.js",
     "test:watch": "jest --watch",
-    "test": "jest"
+    "test:js": "jest js.test.js",
+    "test:go": "jest go.test.js"
   },
   "keywords": [],
   "author": "",
