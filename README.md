@@ -29,8 +29,10 @@ $ node lib/language-server --trace
 
 **Go**
 
+```sh
 # Install https://github.com/golang/tools/tree/master/gopls
 $ gopls -v serve -rpc.trace --port 2089 --debug=localhost:6060 -logfile /tmp/log.log -listen 127.0.0.1:2089
+```
 
 - Run the client in a separate terminal:
 
