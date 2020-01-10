@@ -1,0 +1,92 @@
+[
+  {
+    "symbolID": "55832a943c6c8545427ce215379a7605",
+    "uri": "file:///Users/jeromeschneider/Code/js/algocodesearch/test-repo/dummy.js",
+    "range": {
+      "start": {
+        "line": 0,
+        "character": 4
+      },
+      "end": {
+        "line": 0,
+        "character": 9
+      }
+    },
+    "line": "var myVar; // eslint-disable-line"
+  },
+  {
+    "symbolID": "55832a943c6c8545427ce215379a7605",
+    "uri": "file:///Users/jeromeschneider/Code/js/algocodesearch/test-repo/dummy.js",
+    "range": {
+      "start": {
+        "line": 1,
+        "character": 0
+      },
+      "end": {
+        "line": 1,
+        "character": 5
+      }
+    },
+    "line": "myVar;"
+  },
+  {
+    "symbolID": "f4cd28e7cc720e7857e35abbd4594ecc",
+    "uri": "file:///Users/jeromeschneider/Code/js/algocodesearch/test-repo/dummy.js",
+    "range": {
+      "start": {
+        "line": 3,
+        "character": 9
+      },
+      "end": {
+        "line": 3,
+        "character": 23
+      }
+    },
+    "line": "function SomethingClass() {"
+  },
+  {
+    "symbolID": "f4cd28e7cc720e7857e35abbd4594ecc",
+    "uri": "file:///Users/jeromeschneider/Code/js/algocodesearch/test-repo/dummy.js",
+    "range": {
+      "start": {
+        "line": 8,
+        "character": 0
+      },
+      "end": {
+        "line": 8,
+        "character": 14
+      }
+    },
+    "line": "SomethingClass();"
+  },
+  {
+    "symbolID": "e97eb7c93b0e037017554aff7d8daa13",
+    "uri": "file:///Users/jeromeschneider/Code/js/algocodesearch/test-repo/dummy.js",
+    "range": {
+      "start": {
+        "line": 10,
+        "character": 6
+      },
+      "end": {
+        "line": 10,
+        "character": 9
+      }
+    },
+    "line": "const str = `Hello."
+  },
+  {
+    "symbolID": "e97eb7c93b0e037017554aff7d8daa13",
+    "uri": "file:///Users/jeromeschneider/Code/js/algocodesearch/test-repo/dummy.js",
+    "range": {
+      "start": {
+        "line": 15,
+        "character": 12
+      },
+      "end": {
+        "line": 15,
+        "character": 15
+      }
+    },
+    "line": "console.log(str);"
+  }
+]
