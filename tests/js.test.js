@@ -17,11 +17,11 @@ describe("indexing a javascript file", () => {
     expect(() => new JavaScriptIndexer(ABS_REPO_PATH)).not.toThrow();
   });
 
-  it("returns 1 symbol", async () => {
+  it("returns 3 symbols", async () => {
     const indexer = new JavaScriptIndexer(ABS_REPO_PATH);
     const symbols = await indexer.indexSymbols();
 
-    expect(symbols).toHaveLength(1);
+    expect(symbols).toHaveLength(3);
   });
 
   it("should give IDs to symbols", async () => {
@@ -31,12 +31,12 @@ describe("indexing a javascript file", () => {
     expect(symbols[0]).toHaveProperty("symbolID");
   });
 
-  it("returns 2 refs to that symbol", async () => {
+  it("returns 6 refs total", async () => {
     const indexer = new JavaScriptIndexer(ABS_REPO_PATH);
     const symbols = await indexer.indexSymbols();
     const refs = await indexer.indexRefs(symbols);
 
-    expect(refs).toHaveLength(2);
+    expect(refs).toHaveLength(6);
   });
 
   it("should reference symbolIDs in refs", async () => {

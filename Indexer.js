@@ -3,6 +3,7 @@ const chalk = require("chalk");
 const globby = require("globby");
 const crypto = require("crypto");
 const path = require("path");
+const fs = require("fs");
 
 const {
   createServerSocketTransport,
@@ -122,15 +123,16 @@ class Indexer {
           symbol.location.uri,
           range.start
         );
-        // if (refsRes.length === 0) {
-        //   console.log(chalk.red(
-        //     `NO REFS FOR ` + symbol.name,
-        //   ));
-        // }
+        if (refsRes.length === 0) {
+          console.log(chalk.red(
+            `NO REFS FOR ` + symbol.name,
+          ));
+        }
         refsRes.forEach(ref =>
           refs.push({
             symbolID: symbol.symbolID,
-            ...ref
+            ...ref,
+            line: readLine(ref.uri, ref.range.start.line),  // refs cannot be multiline; symbol definitions however can (funcs, classes, multiline strings, etc)
           })
         );
       } catch (e) {
@@ -148,6 +150,22 @@ class Indexer {
 
     return refs;
   }
+}
+
+function get_line(filename, line_no) {
+  var data = fs.readFileSync(filename, 'utf8');
+  var lines = data.split("\n");
+
+  if(+line_no > lines.length){
+    throw new Error('File end reached without finding line');
+  }
+
+  return lines[+line_no];
+}
+
+// fileURI is file://...; lineNum is 0 indexed;
+function readLine(fileURI, lineNum) {
+  return get_line(fileURI.replace(/^file:\/\//, ''), lineNum);
 }
 
 module.exports = Indexer;
