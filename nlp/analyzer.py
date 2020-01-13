@@ -1,56 +1,66 @@
 from functools import reduce
+from typing import List
 
 import gensim
 from nltk import word_tokenize
 
 from loader import load_symbols
-
 # from nltk.tokenize import sent_tokenize, word_tokenize
 # import warnings
+from model.symbol import Symbol
+
 WINDOW_SIZE = 5
 
 
-def print_similarity(model, first, second, model_name):
-    print("Cosine similarity for %s between %s and %s: %.2f" %
-          (model_name, first, second, model.wv.similarity(first, second)))
+class Analyzer(object):
+    def __init__(self, symbols: List[Symbol]):
+        self.symbols = symbols
+        self.model = self.create_model(symbols)
 
+    @staticmethod
+    def create_model(symbols):
+        print("%i symbols to analyze." % len(symbols))
 
-def analyze(symbols):
-    print("%i symbols to analyze." % len(symbols))
+        blacklist = ["{", "}", "?", ";", ":", "...", "$", "!", "+", "-", ",", ".", "#",
+                     "new", "var", "let", "function", "for", "return", "in"]
+        corpus = [r.line for r in reduce(list.__add__,
+                                         [s.references for s in symbols])
+                  ]
 
-    blacklist = ["{", "}", "?", ";", ":", "...", "$", "!", "+", "-", ",", ".", "#",
-                 "new", "var", "let", "function", "for", "return", "in"]
-    corpus = [r.line for r in reduce(list.__add__,
-                                     [s.references for s in symbols])
-              ]
+        data = []
+        for line in corpus:
+            tokens = word_tokenize(line)
+            data.append([t for t in tokens if t not in blacklist])
 
-    data = []
-    for line in corpus:
-        tokens = word_tokenize(line)
-        data.append([t for t in tokens if t not in blacklist])
+        # Skip Gram model: Teach a neural network to predict a token given its context
+        model = gensim.models.Word2Vec(data, min_count=1, size=100,
+                                       window=WINDOW_SIZE, sg=1)
+        return model
 
-    # CBOW model: Teach a neural network to predict a context given its token
-    model_bag = gensim.models.Word2Vec(data, min_count=1,
-                                       size=100, window=WINDOW_SIZE)
-    # Skip Gram model: Teach a neural network to predict a token given its context
-    model_skip = gensim.models.Word2Vec(data, min_count=1, size=100,
-                                        window=WINDOW_SIZE, sg=1)
-    # TODO: Choose which model works best for each task.
-    #  Comparing similarity -> Skip gram seems to differentiate better
-    #  Getting most similar tokens -> Skip gram too? Need to check with someone familiar with the Dinero.js codebase
+    def similarity(self, first, second):
+        """
+        Measure similarity between two tokens of the corpus.
 
-    models = [(model_bag, "Bag of words"), (model_skip, "Skip Gram")]
+        :return: A similarity index from 0 (unrelated) to 1 (identical).
+        """
+        return self.model.wv.similarity(first, second)
 
-    for model, model_name in models:
-        for reference, values in {"amount": ["currency", "locale"]}.items():
-            for value in values:
-                print_similarity(model, reference, value, model_name)
+    def most_similar(self, symbol, nb_words=5):
+        """
+        Returns the top nb_words most similar to symbol.
 
-        for word in ["Dinero", "amount", "export", ".lessThanOrEqual", "precision", "roundingMode"]:
-            print("Most similar for %s: %s -> %s" % (
-                model_name, word, [word for (word, freq) in model.wv.most_similar(word, topn=5)]))
-        print("\n")
+        """
+        return self.model.wv.most_similar(symbol, topn=nb_words)
 
 
 if __name__ == '__main__':
-    analyze(load_symbols())
+    analyzer = Analyzer(load_symbols())
+
+    for first in ["amount", "globalFormat"]:
+        for second in ["currency", "locale"]:
+            print("Cosine similarity between %s and %s: %.2f" %
+                  (first, second, analyzer.similarity(first, second)))
+
+    for word in ["Dinero", "amount", "export", ".lessThanOrEqual", "precision", "roundingMode"]:
+        print("Words most similar to %s -> %s" % (
+            word, [word for (word, freq) in analyzer.most_similar(word, nb_words=5)]))
